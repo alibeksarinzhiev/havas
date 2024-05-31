@@ -43,7 +43,7 @@ const About = () => {
             <ul className="discount__list">
             <li className="discount__item">
                 <img src={discount4} alt="" className="discount__img" />
-                <p className="discount__text"> Дискаунтер - это выгодный для потребителей формат магазинов, в котором продаются товары по цене ниже обычной.</p>
+                <p className="discount__text"> Дискаунтер - это<br/> выгодный для<br/> потребителей формат<br/> магазинов, в котором<br/> продаются товары по<br/> цене ниже обычной.</p>
             </li>
             <li className="discount__item">
             <img src={discount2} alt="" className="discount__img" />
@@ -88,23 +88,18 @@ const About = () => {
         <ul className="about__shop-items">
         <img src={aboutPick2} alt="" className="about__shop-img" />
             <p className="about__shop-text">
-            530 Сотрудников по<br/> 
-всей сети магазинов
+            530 Сотрудников по<br/> всей сети магазинов
             </p>
         </ul>
         <ul className="about__shop-items">
         <img src={aboutPick3} alt="" className="about__shop-img" />
             <p className="about__shop-text">
-            1200 Разновидностей<br/>
-продовольственных <br/>
-товаров
+            1200 Разновидностей<br/>продовольственных <br/>товаров
             </p>
         </ul>
     </ul>
 </div>
-
-        </div>
-            
+        </div>            
         </section>
     );
 };
