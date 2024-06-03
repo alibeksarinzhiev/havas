@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.middle__section .container{
+    display: flex;
+    // width: 1402px;
+    // height: 1368px;
+}
+.recipes__category{
+    padding-top: 750px;
+    z-index: 1;
+    width: 310px;
+    h4{
+        margin-top: 48px;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 81px;
+    }
+}
+.all__recipes{
+    width: 310px;
+    height: 788px;
+    padding-right: 41px;
+}
+.all__recipes::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 600px;
+    right: 874px;
+    width: 266px;
+    height: 1px;
+    background: #e96023;
+}
+.all__recipes ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 18px;
+    font-weight: 350;
+    margin-bottom: 41px;
+}
+.all__recipes ul li:nth-child(2){
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 81%;
+}
+.all__recipes ul li:nth-child(4){
+    opacity: 0.1;
+}
+.all__recipes__piece{
+    position: absolute;
+    top: 840px;
+    left: 352px;
+    font-weight: 400;
+    font-size: 26px;
+}
+.ellipse{
+    margin-right: 16px;
+}
+.recipes__main__title{
+    z-index: 1;
+}
+.recipes__main__title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 766px;
+    right: 984px;
+    width: 140px;
+    height: 20px;
+    background-color: rgba(250, 223, 0, 1);
+    z-index: -1;
+}
+.meals{
+    margin-left: 41px;
+    margin-top: 958px;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    // width: 900px;
+    // height: 1124px;
+    display: flex;
+    gap: 16px;
+    row-gap: 59px;
+}
+.meals__cards{
+    border-radius: 15px;
+    width: 252px;
+    height: 569px;
+    .name{
+        color: black;
+        margin-bottom: 25px;
+        margin-top: 28px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .description{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 86%;
+        color: #a3a3a3;
+        margin-bottom: 24px;
+        gap: 10px;
+    }
+    button{
+        width: 180px;
+        height: 40px;
+        background: #30922f;
+        color: white;
+        border-radius: 27px;
+        border: none;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    img{
+        border-radius: 15px;
+        width: 250px;
+        height: 250px;
+    }
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container{
+    position: relative;
+    &__main{
+        background: url('../../../assets/Frame\ 16.png');
+        height: 610px;
+        width: 100vw;
+        position: absolute;
+        right: -150px;
+        z-index: -1;
+    }
+}

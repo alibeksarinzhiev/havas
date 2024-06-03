@@ -1,0 +1,46 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.popular__recipes{
+    margin-bottom: 218px;
+    h4{
+        font-weight: 400;
+        font-size: 32px;
+        margin-bottom: 49px;
+    }
+}   
+.popular__recipes__cards{
+    display: flex;
+    gap: 17px;
+    .card{
+        border-radius: 15px;
+    }
+    .card img{
+        width: 570px;
+        border-radius: 15px;
+    }
+    h5{
+        margin: 42px 0 36px 0;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    p{
+        margin-bottom: 27px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 86%;
+        color: #a3a3a3;
+    }
+    button{
+        border: 2px solid #e96023;
+        border-radius: 27px;
+        width: 216px;
+        height: 55px;
+        font-weight: 400;
+        font-size: 22px;
+        color: #e96023;
+    }
+}
