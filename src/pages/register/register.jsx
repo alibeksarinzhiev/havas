@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import './Login.scss'
+import './register.scss'
 import Facebook from '../../assets/facebook (2).png'
 import Twitter from '../../assets/twitter.png'
 import Google from '../../assets/Google.png'
 import Logo from '../../assets/логотип 3.png'
 import axios from "axios";
 
-const Login = () => {
+const Register = () => {
 
 const [email,setEmail] = useState('')
 const [number,setNumber] = useState('')
@@ -19,7 +19,6 @@ const [password,setPassword] = useState('')
             password
         }
         axios.post('http://localhost:8080/users', user)
-
     }
 
 
@@ -49,4 +48,4 @@ const [password,setPassword] = useState('')
     );
 };
 
-export default Login;
+export default Register;
