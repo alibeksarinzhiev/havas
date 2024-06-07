@@ -12,6 +12,15 @@ const Login = () => {
     const[password,setPassword] = useState('')
     const [user,setUser] = useState({})
 
+ // Проверяем, есть ли данные в localStorage
+ useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+        setUser(JSON.parse(storedUser));
+    }
+}, []);
+    
+
     const login = (e)=>{
         e.preventDefault()
         const loginUser = {
@@ -19,10 +28,13 @@ const Login = () => {
             password
         }
 
-        axios.post('http://localhost:8080/login',loginUser)
-            .then(({data})=>setUser(data))
-    }
-
+        axios.post('http://localhost:8080/login', loginUser)
+        .then(({ data }) => {
+            setUser(data);
+            // Сохраняем данные пользователя в localStorage
+            localStorage.setItem('user', JSON.stringify(data));
+        });
+}
 
     return (
         <section>
@@ -35,12 +47,15 @@ const Login = () => {
                     <button>войти</button>
                 </form>
                 <Link to='/register'>Зарегистрироваться</Link>
-                <h2>name:{user.user?.email}</h2>
+                <h2>name:{user.user?.userName}</h2>
 
                 <div>
                     {data.map((el)=>(
+                    <div key={el.id}>
                         <h2>{el.title}</h2>
+                    </div>
                     ))}
+
                 </div>
             </div>
         </section>
