@@ -1,9 +1,18 @@
 import React from 'react';
+import './about.scss'
+
+import Discounter from './Discounter/Discounter';
+import Description from './Description/Description';
+import PhotoList from './PhotoList/PhotoList';
+import SomethingAbout from './SomethingAbout/SomethingAbout';
 
 const About = () => {
     return (
-        <section>
-            <h1>это страница о нас</h1>
+        <section className="about">
+    <Description/>
+    <Discounter/>
+    <PhotoList/>
+    <SomethingAbout/>      
         </section>
     );
 };

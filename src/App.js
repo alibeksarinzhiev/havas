@@ -5,6 +5,7 @@ import Register from "./pages/register/register";
 import Layout from "./Layout/Layout";
 import Recipes from './pages/Recipes/Recipes'
 import Shop from "./pages/Shop/Shop";
+import SpecialOffer from "./pages/SpecialOffer/SpecialOffer"
 import Login from "./pages/login/login";
 import {useEffect} from "react";
 import axios from "axios";
@@ -28,11 +29,14 @@ function App() {
     <Route path={'/'} element={<Layout/>}>
         <Route path={''} element={<Home/>}/>
         <Route path={'about'} element={<About/>}/>
+        <Route path={'specialOffer'} element={<SpecialOffer/>}/>
+
         <Route path={'recipes'} element={<Recipes/>}/>
         <Route path={'shop'} element={<Shop/>}/>
     </Route>
     <Route path={'/register'} element={<Register/>}/>
     <Route path={'/login'} element={<Login/>}/>
+    <Route path={'/register'} element={<Register/>}/>
 </Routes>
 
 

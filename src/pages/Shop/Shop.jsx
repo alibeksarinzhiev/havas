@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react'
+import Map from './Map/Map'
+import Branches from './Branches/Branches'
 
-const Shop = () => {
+export default class Shop extends Component {
+  render() {
     return (
-        <section className='shop'>
-<h1>это шоп</h1>
-        </section>
-    );
-};
+      <section> 
+        <Map/>
+      <Branches/>
+      </section>
+  
+    )
+  }
+}
 
-export default Shop;

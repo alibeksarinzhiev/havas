@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import './login.scss'
+
 import axios from "axios";
 import {useSelector} from "react-redux";
 
@@ -25,12 +27,14 @@ const Login = () => {
     return (
         <section>
             <div className="container">
+            <Link to = "/">НАЗАД</Link>
                 <form onSubmit={(e)=>login(e)} action="">
 
                     <input onChange={(e)=>{setEmail(e.target.value)}} type="text" placeholder='Введите email'/>
                     <input onChange={(e)=>{setPassword(e.target.value)}} type="text" placeholder='Введите пароль'/>
                     <button>войти</button>
                 </form>
+                <Link to='/register'>Зарегистрироваться</Link>
                 <h2>name:{user.user?.email}</h2>
 
                 <div>

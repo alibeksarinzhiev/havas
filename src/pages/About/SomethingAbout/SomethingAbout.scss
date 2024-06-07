@@ -1,0 +1,47 @@
+
+        .something__about {
+          position: relative;
+          display: flex;
+          gap: 51px;
+        }
+
+        .something__about-text {
+          position: relative;
+          width: 1000px;
+        }
+
+        .something__title {
+          position: relative;
+          font-weight: 400;
+          font-size: 44px;
+          margin-bottom: 40px;
+        }
+
+        .something__text {
+          font-weight: 400;
+          font-size: 20px;
+          text-wrap: nowrap;
+        }
+
+        .about__shop-list {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 21px;
+          margin-top: 8px;
+        }
+
+        .about__shop-items {
+          position: relative;
+        }
+
+        .about__shop-img {
+          position: relative;
+          margin-bottom: 21px;
+        }
+
+        .about__shop-text {
+          font-weight: 400;
+          font-size: 20px;
+          text-wrap: nowrap;
+        }

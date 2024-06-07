@@ -5,6 +5,7 @@ import Twitter from '../../assets/twitter.png'
 import Google from '../../assets/Google.png'
 import Logo from '../../assets/логотип 3.png'
 import axios from "axios";
+import { Link} from 'react-router-dom';
 
 const Register = () => {
 
@@ -28,6 +29,7 @@ const [password,setPassword] = useState('')
             <div className="container">
                 <div className="login__box">
                     <div className="left__section">
+                    <Link to = "/login">НАЗАД</Link>
                         <input onChange={(e)=>setNumber(e.target.value)} type="text" placeholder='Enter your mobile number'/>
                         <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Enter your email'/>
                         <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder='Enter your password'/>

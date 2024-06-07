@@ -1,19 +1,19 @@
 import React from 'react';
-import './baner.scss'
+import './baner.scss';
 import SwiperBanner from "./Swiper/Swiper";
-import {useSelector} from "react-redux";
+import { useLocation } from 'react-router-dom';
 
 const Banner = () => {
-    const {data} = useSelector((state)=>state.products)
+    const location = useLocation();
+    const pathBanner = ['/', '/shop', '/specialOffer'];
+    const showBanner = pathBanner.includes(location.pathname);
 
     return (
-        <section className='banner'>
-        <SwiperBanner/>
-
-            <div>{data.map((el)=>(
-                <h2>{el.title}</h2>
-            ))}</div>
-        </section>
+        showBanner && (
+            <section className='banner'>
+                <SwiperBanner />
+            </section>
+        )
     );
 };
 
