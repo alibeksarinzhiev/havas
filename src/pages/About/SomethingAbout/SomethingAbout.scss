@@ -2,12 +2,11 @@
         .something__about {
           position: relative;
           display: flex;
-          gap: 51px;
         }
 
         .something__about-text {
           position: relative;
-          width: 1000px;
+          width: 880px;
         }
 
         .something__title {
@@ -29,6 +28,7 @@
           flex-direction: column;
           gap: 21px;
           margin-top: 8px;
+          margin-left: 0;
         }
 
         .about__shop-items {

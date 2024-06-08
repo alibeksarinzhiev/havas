@@ -1,7 +1,6 @@
 import React from 'react';
 import './SpecialOffer.scss';
 import { useSelector } from 'react-redux';
-import Corn from '../../assets/кукуруза_1.png';
 
 function Special() {
 
@@ -29,8 +28,8 @@ function Special() {
                   <img src={el.img} alt="" className="special__offer-img" />
                   <div>
                     <h3 className="special__offer-description">“ASAL” Мёд</h3>
-                    <p className="special__offer-old-price">3000</p>
-                    <h2 className="special__offer-price">{Math.floor(el.price)}<span>{el.price.toString().split('.')[1]}</span></h2>
+                    <p className="special__offer-old-price">{el.sale}</p>
+                    <h2 className="special__offer-price">{Math.floor(el.price)}<span>.{el.price.toString().split('.')[1]}</span></h2>
                     <h2 className="special__offer-currency">UZS</h2>
                   </div>
                 </div>
@@ -48,7 +47,7 @@ function Special() {
         </div>
 
         <ul className="list__nav">
-          <li className="list__nav-items"><span>1</span></li>
+          <li className="list__nav-items">1</li>
           <li className="list__nav-items">2</li>
           <li className="list__nav-items">3</li>
           <li className="list__nav-items">4</li>

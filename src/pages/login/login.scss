@@ -31,6 +31,19 @@
 
 .button__back {
   margin-top: 20px;
+  text-decoration: none;
+
+  &:hover {
+text-decoration: underline;
+  }
+}
+
+.button__register {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+      }
 }
 
 form {
@@ -47,18 +60,23 @@ input {
   font-weight: 200;
   padding: 0 0 0 10px;
   border: none;
-  background: rgb(235, 235, 235);
+  background: #ebebeb;
   border-radius: 5px;
   margin-top: 20px;
 cursor: pointer;
 }
 
+input:hover {
+  background: #f4f1f1;
+  box-shadow: 0px 0px 30px 1px #c9c8c8;
+}
+
 .button__entry {
   width: 100px;
   height: 30px;
-  border: 1px solid rgb(255, 106, 0);
+  border: 1px solid #ff6a00;
   border-radius: 4px;
-  color: rgb(255, 106, 0);
+  color: #ff6a00;
   background-color: white;
   margin-bottom: 20px;
   cursor: pointer;
@@ -74,11 +92,15 @@ cursor: pointer;
 }
 
 .forgot{
-  color: rgb(164, 164, 164);
+  color: #a4a4a4;
   font-size: 13px;
   text-decoration: underline;
   cursor: pointer;
   margin-bottom: 10px;
+
+  &:hover {
+    color: #ff6a00;
+  }
 }
 
 h6 {
@@ -95,7 +117,7 @@ h6 {
   align-items: center;
   width: 30%;
   height: 400px;
-  background: rgb(255,102,10);
+  background: #ff660a;
 background: linear-gradient(31deg, rgba(255,102,10,1) 0%, rgba(255,238,7,1) 89%);
   border-radius: 0 10px 10px 0;
 }

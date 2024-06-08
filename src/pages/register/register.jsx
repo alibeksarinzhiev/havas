@@ -12,9 +12,11 @@ const Register = () => {
 const [email,setEmail] = useState('')
 const [number,setNumber] = useState('')
 const [password,setPassword] = useState('')
+const [userName,setUserName] = useState('')
 
     let registerUser = ()=>{
         let user = {
+            userName,
             email,
             number,
             password
@@ -31,6 +33,7 @@ const [password,setPassword] = useState('')
                     <div className="left__section">
                     <h5>Registration</h5>
                     <Link to = "/login">НАЗАД</Link>
+                    <input onChange={(e)=>setUserName(e.target.value)} type="text" placeholder='Enter your user name'/>
                         <input onChange={(e)=>setNumber(e.target.value)} type="text" placeholder='Enter your mobile number'/>
                         <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Enter your email'/>
                         <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder='Enter your password'/>

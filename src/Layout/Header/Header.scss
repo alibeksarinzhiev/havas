@@ -20,6 +20,7 @@
       width: 596px;
       border: 1px solid #bdbdbd;
       border-radius: 20px;
+
       input{
         width: 500px;
         height: 100%;
@@ -27,6 +28,8 @@
         outline: none;
         border-radius: 20px;
       padding-left: 30px;
+      margin-top: 0px;
+      border-radius: 20px 0 0 20px;
       }
       button{
         width: 96px;

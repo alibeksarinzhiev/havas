@@ -45,11 +45,12 @@ margin-bottom: 50px;
   grid-template-columns: auto auto auto;
   column-gap: 14px;
   row-gap: 77px;
+  justify-content: space-between;
 }
 
 &-products {
 position: relative;
-width: 380px;
+width: 370px;
 height: 100%;
 }
 
