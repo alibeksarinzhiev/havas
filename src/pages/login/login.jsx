@@ -49,9 +49,9 @@ const Login = () => {
                                     <input onChange={(e)=>{setPassword(e.target.value)}} type="text" placeholder='Введите пароль'/>
                                     <button className='button__entry'>войти</button>
                                 </form>
-                                <p>Forgot password?</p>
+                                <Link className='forgot'>Forgot password?</Link>
                                 <Link to='/register' className='button__register'>Зарегистрироваться</Link>
-                                <h2>Welcome- {user.user?.userName}</h2>
+                                <h6>Welcome- {user.user?.userName}</h6>
                 
                         </div>
     

@@ -10,7 +10,7 @@ import Login from "./pages/login/login";
 import {useEffect} from "react";
 import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
-import {setAllProducts} from "./redux/Reducer/products";
+import {setAllProducts, setPromProducts} from "./redux/Reducer/products";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     useEffect(()=>{
         axios('http://localhost:8080/products')
             .then(({data})=>dispatch(setAllProducts(data)))
-    },[])
+    },[]);
 
   return (
     <>
