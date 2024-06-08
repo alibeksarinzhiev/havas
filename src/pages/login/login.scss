@@ -1,4 +1,4 @@
-.login__section {
+.login__section2 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -8,7 +8,7 @@
   flex-wrap: wrap;
 }
 
-.container__login-box {
+.container__login-box2 {
   display: flex;
   position: relative;
   width: 800px;
@@ -20,7 +20,7 @@
   margin-top: 150px;
 }
 
-.login__left-side {
+.login__left-side2 {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ input {
 cursor: pointer;
 }
 
-button {
+.button__entry {
   width: 100px;
   height: 30px;
   border: 1px solid rgb(255, 106, 0);
@@ -73,6 +73,14 @@ button {
   }
 }
 
+p{
+  color: rgb(164, 164, 164);
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
 h2 {
   margin-top: 20px;
   font-size: 18px;
@@ -80,7 +88,7 @@ h2 {
   font-weight: normal;
 }
 
-.login__right-side {
+.login__right-side2 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -92,13 +100,6 @@ background: linear-gradient(31deg, rgba(255,102,10,1) 0%, rgba(255,238,7,1) 89%)
   border-radius: 0 10px 10px 0;
 }
 
-.login__right-side::before {
-content: "";
-position: absolute;
-border-bottom: 3px solid #4d4d4d;
-top: 100%;
-left: -50%;
-}
 
 .logo {
   width: 100px;

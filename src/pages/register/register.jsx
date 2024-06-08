@@ -29,11 +29,11 @@ const [password,setPassword] = useState('')
             <div className="container">
                 <div className="login__box">
                     <div className="left__section">
+                    <h5>Registration</h5>
                     <Link to = "/login">НАЗАД</Link>
                         <input onChange={(e)=>setNumber(e.target.value)} type="text" placeholder='Enter your mobile number'/>
                         <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Enter your email'/>
                         <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder='Enter your password'/>
-                        <p>Forgot password?</p>
                         <button onClick={registerUser} className='confirm'>Confirm</button>
                         <div className="login__ways">
                             <button><img src={Google} alt="" /></button>                    

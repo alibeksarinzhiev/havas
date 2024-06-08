@@ -51,14 +51,7 @@
         border-radius: 5px;
         margin-top: 20px;
     }
-    p{
-        color: rgb(164, 164, 164);
-        font-size: 13px;
-        text-decoration: underline;
-        cursor: pointer;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+
     .confirm{
         width: 100px;
         height: 30px;
@@ -66,7 +59,8 @@
         border-radius: 4px;
         color: rgb(255, 106, 0);
         background-color: white;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         cursor: pointer;
     }
 }
@@ -82,4 +76,9 @@ background: linear-gradient(31deg, rgba(255,102,10,1) 0%, rgba(255,238,7,1) 89%)
         // width: 200px;
         // height: 248px;
     }
+}
+
+h5 {
+    font-size: 24px;
+    color: #444;
 }

@@ -37,24 +37,25 @@ const Login = () => {
 }
 
     return (
-        <section className='login__section'>
+        <section className='login__section2'>
                 <div className='container'>
-                    <div className='container__login-box'>
-                        <div className='login__left-side'>
+                    <div className='container__login-box2'>
+                        <div className='login__left-side2'>
                         <h4>LogIn</h4>
                             <Link to = "/" className='button__back'>НАЗАД</Link>
                                 <form onSubmit={(e)=>login(e)} action="">
                 
                                     <input onChange={(e)=>{setEmail(e.target.value)}} type="text" placeholder='Введите email'/>
                                     <input onChange={(e)=>{setPassword(e.target.value)}} type="text" placeholder='Введите пароль'/>
-                                    <button>войти</button>
+                                    <button className='button__entry'>войти</button>
                                 </form>
+                                <p>Forgot password?</p>
                                 <Link to='/register' className='button__register'>Зарегистрироваться</Link>
                                 <h2>Welcome- {user.user?.userName}</h2>
                 
                         </div>
     
-                            <div className="login__right-side">
+                            <div className="login__right-side2">
                             <img className='logo' src={Logo} alt="" />
                             </div>
                     </div>
