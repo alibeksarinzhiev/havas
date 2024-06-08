@@ -1,0 +1,122 @@
+.login__section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container__login-box {
+  display: flex;
+  position: relative;
+  width: 800px;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 1px rgba(224,224,224,1);
+  background-color: white;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.login__left-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.button__back {
+  margin-top: 20px;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 0 0 0 10px;
+  border: none;
+  background: rgb(235, 235, 235);
+  border-radius: 5px;
+  margin-top: 20px;
+cursor: pointer;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(255, 106, 0);
+  border-radius: 4px;
+  color: rgb(255, 106, 0);
+  background-color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+
+  &:hover {
+    background: #30922f;
+    color: #fff;
+    border: none;
+  }
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #888;
+  font-weight: normal;
+}
+
+.login__right-side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 400px;
+  background: rgb(255,102,10);
+background: linear-gradient(31deg, rgba(255,102,10,1) 0%, rgba(255,238,7,1) 89%);
+  border-radius: 0 10px 10px 0;
+}
+
+.login__right-side::before {
+content: "";
+position: absolute;
+border-bottom: 3px solid #4d4d4d;
+top: 100%;
+left: -50%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.button__register {
+
+}
+
+.login__content {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+h4 {
+  font-size: 24px;
+  color: #444;
+}
+
+

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './login.scss'
-
+import Logo from '../../assets/логотип 3.png'
 import axios from "axios";
 import {useSelector} from "react-redux";
 
@@ -37,27 +37,36 @@ const Login = () => {
 }
 
     return (
-        <section>
-            <div className="container">
-            <Link to = "/">НАЗАД</Link>
-                <form onSubmit={(e)=>login(e)} action="">
-
-                    <input onChange={(e)=>{setEmail(e.target.value)}} type="text" placeholder='Введите email'/>
-                    <input onChange={(e)=>{setPassword(e.target.value)}} type="text" placeholder='Введите пароль'/>
-                    <button>войти</button>
-                </form>
-                <Link to='/register'>Зарегистрироваться</Link>
-                <h2>name:{user.user?.userName}</h2>
-
-                <div>
-                    {data.map((el)=>(
-                    <div key={el.id}>
-                        <h2>{el.title}</h2>
+        <section className='login__section'>
+                <div className='container'>
+                    <div className='container__login-box'>
+                        <div className='login__left-side'>
+                        <h4>LogIn</h4>
+                            <Link to = "/" className='button__back'>НАЗАД</Link>
+                                <form onSubmit={(e)=>login(e)} action="">
+                
+                                    <input onChange={(e)=>{setEmail(e.target.value)}} type="text" placeholder='Введите email'/>
+                                    <input onChange={(e)=>{setPassword(e.target.value)}} type="text" placeholder='Введите пароль'/>
+                                    <button>войти</button>
+                                </form>
+                                <Link to='/register' className='button__register'>Зарегистрироваться</Link>
+                                <h2>Welcome- {user.user?.userName}</h2>
+                
+                        </div>
+    
+                            <div className="login__right-side">
+                            <img className='logo' src={Logo} alt="" />
+                            </div>
                     </div>
-                    ))}
-
+    
+                                <div className='login__content'>
+                                    {data.map((el)=>(
+                                    <div key={el.id} >
+                                        <h3>{el.title}</h3>
+                                    </div>
+                                    ))}        
+                                </div>
                 </div>
-            </div>
         </section>
     );
 };
