@@ -4,10 +4,9 @@ import { useSelector } from 'react-redux';
 import Corn from '../../assets/кукуруза_1.png';
 
 function Special() {
-  const {data} = useSelector((state)=>state.products)
 
+  const {data} = useSelector((state)=>state.products)  
   const promProducts = data.filter((el) => el.category === 'promoution');
-
   return (
     <section className='special__offer'>
       <div className='container'>
@@ -21,6 +20,7 @@ function Special() {
 
         <div className="special__offer-products-box">
           {promProducts.map((el) => (
+
             <div className="special__offer-products" key={el.id}>
               <div className="special__offer-img-box">
                 <h3 className="special__offer-product-title">АКЦИОННЫЙ ТОВАР</h3>
@@ -30,7 +30,7 @@ function Special() {
                   <div>
                     <h3 className="special__offer-description">“ASAL” Мёд</h3>
                     <p className="special__offer-old-price">3000</p>
-                    <h2 className="special__offer-price">{el.price}<span>500</span></h2>
+                    <h2 className="special__offer-price">{Math.floor(el.price)}<span>{el.price.toString().split('.')[1]}</span></h2>
                     <h2 className="special__offer-currency">UZS</h2>
                   </div>
                 </div>

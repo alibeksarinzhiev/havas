@@ -443,7 +443,7 @@
       "promoution": "30%"
     },
     {
-      "id": 10,
+      "id": 11,
       "category": "promoution",
       "img": "/src/assets/products/paper.png",
       "title": "Туалетная бумага “Нежность”",
@@ -452,23 +452,46 @@
       "sale": "3000",
       "promoution": "30%"
     },
+
     {
-      "id": 11
+      "id": 12,
+      "category": "promoution",
+      "img": "/src/assets/кукуруза_1.png",
+      "title": "Кукуруза “Kidzo”",
+      "price": "17.500",
+      "description": "Вы с друзьями запланировали киномарафон? Не забудьте запастись чипсами на большую компанию.",
+      "sale": "3000",
+      "promoution": "30%"
     },
     {
-      "id": 12
+      "id": 13,
+      "category": "promoution",
+      "img": "/src/assets/products/honey.png",
+      "title": "“ASAL”  Мёд",
+      "price": "17.500",
+      "description": "Вы с друзьями запланировали киномарафон? Не забудьте запастись чипсами на большую компанию.",
+      "sale": "3000",
+      "promoution": "30%"
     },
     {
-      "id": 13
+      "id": 14,
+      "category": "promoution",
+      "img": "/src/assets/products/paper.png",
+      "title": "Туалетная бумага “Нежность”",
+      "price": "17.500",
+      "description": "Вы с друзьями запланировали киномарафон? Не забудьте запастись чипсами на большую компанию.",
+      "sale": "3000",
+      "promoution": "30%"
     },
-    {
-      "id": 14
-    },
+  
     {
       "id": 15
     },
     {
       "id": 16
+    },
+    {
+      "id": 17
     }
   ]
 }
