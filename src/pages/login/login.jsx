@@ -4,9 +4,13 @@ import './login.scss'
 import Logo from '../../assets/логотип 3.png'
 import axios from "axios";
 import {useSelector} from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
     const {data} = useSelector((state)=>state.products)
+
+    const navigate = useNavigate();
 
     const[email,setEmail] = useState('')
     const[password,setPassword] = useState('')
@@ -34,6 +38,7 @@ const Login = () => {
             // Сохраняем данные пользователя в localStorage
             localStorage.setItem('user', JSON.stringify(data));
         });
+        navigate('/')
 }
 
     return (

@@ -20,6 +20,13 @@
       "password": "$2a$10$DmC.v/B81D/yprSLkMtsje22CAPBCWwS3cjKHdXdYJsPjXWLCFtq6",
       "number": "+9965554789654",
       "id": 3
+    },
+    {
+      "email": "ali@mail.ru",
+      "password": "$2a$10$/4ej.aSrnBqXJIVr5DwLIOPHJOkIwMMXAQHvY0VRELww79x4hZSeC",
+      "userName": "alibek",
+      "number": "055555555",
+      "id": 4
     }
   ],
   "products": [
@@ -453,7 +460,6 @@
       "sale": "3000",
       "promoution": "30%"
     },
-
     {
       "id": 12,
       "category": "promoution",
@@ -484,7 +490,6 @@
       "sale": "3000",
       "promoution": "30%"
     },
-  
     {
       "id": 15
     },

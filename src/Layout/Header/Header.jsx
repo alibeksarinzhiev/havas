@@ -8,6 +8,11 @@ import logo from '../../assets/логотип 3.png';
 
 const Header = () => {
   const location = useLocation();
+  const user = JSON.parse(localStorage.getItem('user'))
+
+  const logout = ()=>{
+    localStorage.removeItem('user')
+  }
 
   const isSelected = (path) => {
     return location.pathname === path ? 'selected' : '';
@@ -50,7 +55,8 @@ const Header = () => {
           <ul className='header__nav'>
             <li>ДЛЯ ПАРТНЁРОВ</li>
             <li>КАРЬЕРА</li>
-            <li><Link to ='login' className={isSelected('/login')}>ВОЙТИ</Link></li>
+            <li onClick={logout}>{user?'выйти':''}</li>
+            <li><Link to ='login' className={isSelected('/login')}>{user?'':'войти'}</Link></li>
           </ul>
         </div>
       </div>

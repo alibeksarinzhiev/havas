@@ -1,6 +1,7 @@
 import React from 'react';
 import './SpecialOffer.scss';
 import { useSelector } from 'react-redux';
+import {Link} from "react-router-dom";
 
 function Special() {
 
@@ -19,7 +20,7 @@ function Special() {
 
         <div className="special__offer-products-box">
           {promProducts.map((el) => (
-
+  <Link to={`/oneproduct/${el.id}`}>
             <div className="special__offer-products" key={el.id}>
               <div className="special__offer-img-box">
                 <h3 className="special__offer-product-title">АКЦИОННЫЙ ТОВАР</h3>
@@ -41,6 +42,7 @@ function Special() {
                 <button className="special__offer-bottom-btn">Подробнее...</button>
               </div>
             </div>
+  </Link>
           ))}
 
           
