@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.scss'
 
+<<<<<<< HEAD
 import AbautPic from '../../assets/abaut_pic 14.png'
 import discount1 from '../../assets/assortment2.png'
 import discount2 from '../../assets/low_price.png'
@@ -17,10 +18,17 @@ import photo6 from '../../assets/photo6.png'
 import aboutPick1 from '../../assets/shop.png'
 import aboutPick2 from '../../assets/human.png'
 import aboutPick3 from '../../assets/products.png'
+=======
+import Discounter from './Discounter/Discounter';
+import Description from './Description/Description';
+import PhotoList from './PhotoList/PhotoList';
+import SomethingAbout from './SomethingAbout/SomethingAbout';
+>>>>>>> 11369eb001a8a669915c6331b755660c40a5fa92
 
 const About = () => {
     return (
         <section className="about">
+<<<<<<< HEAD
         <div className="about__container container">
             <div className="about__top">
             <div className="about__top-left">
@@ -100,6 +108,12 @@ const About = () => {
     </ul>
 </div>
         </div>            
+=======
+    <Description/>
+    <Discounter/>
+    <PhotoList/>
+    <SomethingAbout/>      
+>>>>>>> 11369eb001a8a669915c6331b755660c40a5fa92
         </section>
     );
 };

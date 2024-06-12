@@ -1,0 +1,15 @@
+.photos__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 76px;
+  row-gap: 14px;
+  column-gap: 10px;
+  margin-bottom: 87px;
+}
+
+.photos__img {
+    position: relative;
+    width: 360px;
+    height: 226px;
+  }

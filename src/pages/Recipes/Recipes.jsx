@@ -1,10 +1,15 @@
 import React from 'react';
+import Title from './Title/Title'
+import Middle from './Middle/Middle';
+import Bottom from './Bottom/Bottom';
 
 const Recipes = () => {
     return (
-        <section className='recipes'>
-<h1>это рецепты</h1>
-        </section>
+        <>
+          <Title/>
+          <Middle/>
+          <Bottom/>
+        </>
     );
 };
 

@@ -1,0 +1,58 @@
+.about__top {
+
+  .about__top {
+    position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      
+      &-left {
+          width: 50%;
+      }
+      
+      &-right {
+          width: 50%;
+      }
+  }
+
+  .about__about-word {
+    position: relative;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 60px;
+
+      .about__mark {
+          position: absolute;
+          top: 20px;
+          left: 28px;
+          width: 85px;
+          height: 20px;
+          background-color: #fadf00;
+          z-index: -1;
+      }
+  }
+
+  .about__name {
+    font-weight: 700;
+    font-size: 60px;
+  }
+
+  .about__title {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 37px;
+  }
+
+  .about__text {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+.about__img {
+position: relative;
+margin-left: 55px;
+margin-top: 10px;
+width: 514px;
+height: 511px;
+}
+}
