@@ -42,7 +42,8 @@ const Header = () => {
           </ul>
           <ul className='header__nav'>
             <li>ДЛЯ ПАРТНЁРОВ</li>
-            <li>КАРЬЕРА</li>
+            <Link to='/career' className={isSelected('/career')}>КАРЬЕРА</Link>
+           
           </ul>
         </div>
       </div>
