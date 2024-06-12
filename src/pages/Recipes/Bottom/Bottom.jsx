@@ -4,9 +4,14 @@ import HPelmeni from '../../../assets/Homemade pelmeni.png'
 import OrangeJuice from '../../../assets/Orange juice.png'
 
 const Bottom = () => {
+
+
+
+
     return (
         <section className='popular__recipes'>
             <div className="container">
+
                 <h4>Популярные рецепты:</h4>
                 <div className="popular__recipes__cards">
                     <div className="card">

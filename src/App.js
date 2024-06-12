@@ -12,6 +12,7 @@ import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
 import {setAllProducts, setPromProducts} from "./redux/Reducer/products";
 import OneProduct from "./pages/OneProduct/OneProduct";
+import AddProduct from "./pages/AdminPanel/AddProduct";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     <Route path={'oneproduct/:id'} element={<OneProduct/>}/>
         <Route path={'recipes'} element={<Recipes/>}/>
         <Route path={'shop'} element={<Shop/>}/>
+        <Route path={'addproduct'} element={<AddProduct/>}/>
     </Route>
     <Route path={'/register'} element={<Register/>}/>
     <Route path={'/login'} element={<Login/>}/>

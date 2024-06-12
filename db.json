@@ -27,6 +27,13 @@
       "userName": "alibek",
       "number": "055555555",
       "id": 4
+    },
+    {
+      "email": "admin@mail.ru",
+      "password": "$2a$10$UmJKnbaYdVYDMgPFYMxeu.I3GfViwxdUpyfgPNg5IerNxnAAcPViW",
+      "userName": "admin",
+      "number": "1234567",
+      "id": 5
     }
   ],
   "products": [
@@ -498,6 +505,18 @@
     },
     {
       "id": 17
+    }
+  ],
+  "vacancies": [
+    {
+      "id": 1,
+      "title": "",
+      "description": "",
+      "salary":"",
+      "exp": "",
+      "age": ""
+
+
     }
   ]
 }

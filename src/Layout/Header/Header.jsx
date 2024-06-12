@@ -57,6 +57,11 @@ const Header = () => {
             <li>КАРЬЕРА</li>
             <li onClick={logout}>{user?'выйти':''}</li>
             <li><Link to ='login' className={isSelected('/login')}>{user?'':'войти'}</Link></li>
+            <li>{user?.user.userName}</li>
+            {user?.user.userName ==='admin'?
+                <li><Link to={'/addproduct'}>Добавить товар</Link></li>:''
+            }
+
           </ul>
         </div>
       </div>
