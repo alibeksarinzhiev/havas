@@ -6,7 +6,7 @@ import Layout from "./Layout/Layout";
 import Recipes from './pages/Recipes/Recipes'
 import Shop from "./pages/Shop/Shop";
 import SpecialOffer from "./pages/SpecialOffer/SpecialOffer"
-import Login from "./pages/login/login";
+import Login from "./pages/Login/login";
 import {useEffect} from "react";
 import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
