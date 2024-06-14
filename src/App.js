@@ -5,6 +5,9 @@ import Register from "./pages/register/register";
 import Layout from "./Layout/Layout";
 import Recipes from './pages/Recipes/Recipes'
 import Shop from "./pages/Shop/Shop";
+
+import Career from './pages/Career/career'
+
 import SpecialOffer from "./pages/SpecialOffer/SpecialOffer"
 import Login from "./pages/Login/login";
 import {useEffect} from "react";
@@ -13,6 +16,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setAllProducts, setPromProducts} from "./redux/Reducer/products";
 import OneProduct from "./pages/OneProduct/OneProduct";
 import AddProduct from "./pages/AdminPanel/AddProduct";
+
 
 
 function App() {
@@ -35,9 +39,14 @@ function App() {
     <Route path={'oneproduct/:id'} element={<OneProduct/>}/>
         <Route path={'recipes'} element={<Recipes/>}/>
         <Route path={'shop'} element={<Shop/>}/>
+    
+        <Route path={'career'} element={<Career/>}/>
+
+
         <Route path={'addproduct'} element={<AddProduct/>}/>
         <Route path={'addvacancies'} element={<AddProduct/>}/>
         <Route path={'changeproduct'} element={<AddProduct/>}/>
+
     </Route>
     <Route path={'/register'} element={<Register/>}/>
     <Route path={'/login'} element={<Login/>}/>

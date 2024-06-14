@@ -5,6 +5,7 @@ import Branches from './Branches/Branches'
 export default class Shop extends Component {
   render() {
     return (
+
       <section> 
         <Map/>
       <Branches/>
