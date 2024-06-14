@@ -10,20 +10,19 @@ const AddProduct = () => {
                 <div className="container">
                 <div className='add__container'>
                     <form className='add__product-form' action="">
-                    <input type="text" className ='add__category'/> <label htmlFor="add__category">Add category</label>
-                    <input type="text" className ='add__title'/><label htmlFor="add__title">Add title</label>
-                    <input type="text" className ='add__price'/><label htmlFor="add__price">Add price</label>
-                    <input type="text" className ='add__description'/><label htmlFor="add__description">Add description</label>
-                    <input type="text" className ='add__sale'/><label htmlFor="add__sale">Add sale</label>
-                    <input type="text" className ='add__promoution'/><label htmlFor="add__promoution">Add promoution</label>
-    
-                    
-                    <input type="file" className='add__image' id='add__image' accept="image/*" />
+                    <input type="text" placeholder='Add category' className ='add__category'/>
+                    <input type="text" placeholder='Add title' className ='add__title'/>
+                    <input type="text" placeholder='Add price' className ='add__price'/>
+                    <input type="text" placeholder='Add description' className ='add__description'/>
+                    <input type="text" placeholder='Add old price' className ='add__sale'/>
+                    <input type="text" placeholder='Add promoution' className ='add__promoution'/>
+                
+                    <input type="file" className='add__image'accept="image/*" />
                     <label htmlFor="add__image">Select image</label>
-                    <button className='button__Add'>добавить продукт</button>
+                    <button className='button__add'>добавить продукт</button>
                     </form>
     
-                    <div className="login__right-side2">
+                    <div className="login__right-side2 login__right-add">
                     <img className='logo' src={Logo} alt="" />
                     </div>
                     </div>

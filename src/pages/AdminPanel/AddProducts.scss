@@ -11,13 +11,19 @@ align-items: center;
 justify-content: center;
 height: 600px;
 width: 70%;
+margin-right: -150px;
 }
 
+
 .add__product-form input {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   width: 400px;
 }
 
-.button__Add {
+.button__add {
   width: 100px;
   height: 60px;
   border: 1px solid #ff6a00;
@@ -33,4 +39,14 @@ width: 70%;
     color: #fff;
     border: none;
   }
+}
+
+.add__image {
+  display: flex;
+  position: relative;
+  padding-top: 7px;
+}
+
+.login__right-add {
+margin-top: 50px;
 }
