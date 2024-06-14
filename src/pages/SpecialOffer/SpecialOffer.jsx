@@ -20,7 +20,7 @@ function Special() {
 
         <div className="special__offer-products-box">
           {promProducts.map((el) => (
-  <Link to={`/oneproduct/${el.id}`}>
+  <Link to={`/oneproduct/${el.id}`} className='link__special'>
             <div className="special__offer-products" key={el.id}>
               <div className="special__offer-img-box">
                 <h3 className="special__offer-product-title">АКЦИОННЫЙ ТОВАР</h3>
