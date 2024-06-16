@@ -440,7 +440,7 @@
     {
       "id": 9,
       "category": "promoution",
-      "img": "/src/assets/кукуруза_1.png",
+      "img": "/assets/кукуруза_1.png",
       "title": "Чипсы “Kidzo”",
       "price": "23.500",
       "description": "Do you wanna watch the movie? Не забудьте запастись чипсами на большую компанию.",
@@ -450,7 +450,7 @@
     {
       "id": 10,
       "category": "promoution",
-      "img": "/src/assets/products/honey.png",
+      "img": "/assets/products/honey.png",
       "title": "“ASAL”  Мёд",
       "price": "17.500",
       "description": "Вы с друзьями запланировали киномарафон? Не забудьте запастись чипсами на большую компанию.",
@@ -470,7 +470,7 @@
     {
       "id": 12,
       "category": "promoution",
-      "img": "/src/assets/кукуруза_1.png",
+      "img": "/assets/кукуруза_1.png",
       "title": "Кукуруза “Kidzo”",
       "price": "17.500",
       "description": "Вы с друзьями запланировали киномарафон? Не забудьте запастись чипсами на большую компанию.",
@@ -480,7 +480,7 @@
     {
       "id": 13,
       "category": "promoution",
-      "img": "/src/assets/products/honey.png",
+      "img": "/assets/products/honey.png",
       "title": "“ASAL”  Мёд",
       "price": "17.500",
       "description": "Вы с друзьями запланировали киномарафон? Не забудьте запастись чипсами на большую компанию.",
@@ -490,12 +490,52 @@
     {
       "id": 14,
       "category": "promoution",
-      "img": "/src/assets/products/paper.png",
+      "img": "/assets/products/paper.png",
       "title": "Туалетная бумага “Нежность”",
       "price": "17.500",
       "description": "Вы с друзьями запланировали киномарафон? Не забудьте запастись чипсами на большую компанию.",
       "sale": "3000",
       "promoution": "30%"
+    },
+    {
+      "category": "sale",
+      "title": "new title",
+      "price": "400",
+      "description": "new description",
+      "sale": "580",
+      "promoution": "20%",
+      "image": null,
+      "id": 15
+    },
+    {
+      "category": "promoution",
+      "title": "new product",
+      "price": "888",
+      "description": "new test product",
+      "sale": "999",
+      "promoution": "25%",
+      "image": "C:\\fakepath\\Main page.png",
+      "id": 16
+    },
+    {
+      "category": "promoution",
+      "title": "new 2",
+      "price": "78",
+      "description": "new test image",
+      "sale": "65",
+      "promoution": "19%",
+      "image": "/assets/product/C:\\fakepath\\Main page.png",
+      "id": 17
+    },
+    {
+      "category": "promoution",
+      "title": "hkgkhjg",
+      "price": "78",
+      "description": "nljn,nl",
+      "sale": "98",
+      "promoution": "19",
+      "image": "/assets/product/about us.jpg",
+      "id": 18
     }
   ],
   "vacancies": [

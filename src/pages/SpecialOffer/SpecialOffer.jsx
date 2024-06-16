@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 function Special() {
 
   const {data} = useSelector((state)=>state.products)  
-  const promProducts = data.filter((el) => el.category === 'recipes');
+  const promProducts = data.filter((el) => el.category === 'promoution');
   return (
     <section className='special__offer'>
       <div className='container'>

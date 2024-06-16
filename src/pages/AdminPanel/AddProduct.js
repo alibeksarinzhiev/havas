@@ -7,15 +7,14 @@ import Logo from '../../assets/логотип 3.png';
 
 const AddProduct = () => {
 
-    const {data} = useSelector((state)=>state.products)
-
   const [category, setCategory] = useState('');
   const [title, setTitle] = useState('');
   const [price, setPrice] = useState('');
   const [description, setDescription] = useState('');
   const [sale, setSale] = useState('');
   const [promoution, setPromoution] = useState('');
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState('');
+  
 
   const product = (e)=>{
     e.preventDefault()
@@ -48,7 +47,7 @@ const AddProduct = () => {
             <input onChange={(e)=>setSale(e.target.value)} type="text" placeholder="Add old price" className="add__sale" />
             <input onChange={(e)=>setPromoution(e.target.value)} type="text" placeholder="Add promoution" className="add__promoution" />
 
-            <input type="file" className="add__image" accept="image/*" onChange={(e) => setImage(e.target.files[0])}/>
+            <input  onChange={(e) => {const fileName = e.target.value.split('\\').pop(); setImage(`/assets/product/${fileName}`);}} type="file" className="add__image" accept="/image/*"/>
             <label htmlFor="add__image">Select image</label>
 
             <button  onClick={product} type="submit" className="button__add"> добавить продукт</button>
