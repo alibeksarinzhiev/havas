@@ -43,7 +43,7 @@ const AddProduct = () => {
             <input onChange={(e)=>setCategory(e.target.value)} type="text" placeholder="Add category" className="add__category"/>
             <input onChange={(e)=>setTitle(e.target.value)} type="text" placeholder="Add title" className="add__title"/>
             <input onChange={(e)=>setPrice(e.target.value)} type="text" placeholder="Add price" className="add__price" />
-            <input onChange={(e)=>setDescription(e.target.value)} type="text" placeholder="Add description" className="add__description" />
+            <textarea onChange={(e)=>setDescription(e.target.value)} type="text" placeholder="Add description" className="add__description" />
             <input onChange={(e)=>setSale(e.target.value)} type="text" placeholder="Add old price" className="add__sale" />
             <input onChange={(e)=>setPromoution(e.target.value)} type="text" placeholder="Add promoution" className="add__promoution" />
 
