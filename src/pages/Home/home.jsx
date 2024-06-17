@@ -10,8 +10,7 @@ const Home = () => {
 
     return (
         <>
-         <Special/>
-
+        <Special/>
         </>
     );
 };
